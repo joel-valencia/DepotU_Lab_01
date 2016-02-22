@@ -1,8 +1,10 @@
 <!doctype HTML>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Joel Valencia - Resume</title>
+        <script src="jquery-2.2.0.min.js"></script>
+		<script src="index.js"></script>
     </head>
     <body>
         <div id="nav">
@@ -64,14 +66,14 @@
             <div id="contact">
                 <h2>Contact Me</h2>
                 <div class="container">
-                    <form action="">
+                    <form onsubmit="return false;">
                         <div class="form-label">Name</div>
                         <input id="name">
                         <div class="form-label">Email</div>
                         <input id="email">
                         <div class="form-label">Message</div>
                         <textarea id="message"></textarea>
-                        <input type="submit" value="Send"></form>
+                        <input type="submit" value="Send" id="send"></form>
                     </form>
                 </div>
             </div>
